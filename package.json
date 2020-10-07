@@ -1,0 +1,30 @@
+{
+  "name": "cloudinary-upload-react-node",
+  "version": "1.0.0",
+  "description": "Upload files to cloudinary",
+  "main": "sever.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweneboah/cloudinary-upload-react-node.git"
+  },
+  "author": "Emmanuel Tweneboah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tweneboah/cloudinary-upload-react-node/issues"
+  },
+  "homepage": "https://github.com/tweneboah/cloudinary-upload-react-node#readme",
+  "dependencies": {
+    "cloudinary": "^1.23.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8",
+    "nodemon": "^2.0.4"
+  }
+}
